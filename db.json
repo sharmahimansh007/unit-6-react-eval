@@ -11,6 +11,10 @@
     {
       "name": "japan",
       "id": 3
+    },
+    {
+      "name": "india",
+      "id": 4
     }
   ],
   "city": [
@@ -31,6 +35,30 @@
       "population": "2323",
       "country": "",
       "id": 4
+    },
+    {
+      "name": "gwalior",
+      "population": "23423",
+      "country": "",
+      "id": 5
+    },
+    {
+      "name": "pune",
+      "population": "232",
+      "country": "",
+      "id": 6
+    },
+    {
+      "name": "tokyo",
+      "population": "342",
+      "country": "",
+      "id": 7
+    },
+    {
+      "name": "tokyo",
+      "population": "23423",
+      "country": "japan",
+      "id": 8
     }
   ]
 }

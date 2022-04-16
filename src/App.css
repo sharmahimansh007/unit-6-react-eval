@@ -5,6 +5,10 @@
 
 margin: auto;
 }
+tbody > tr > td{
+  width: 100px;
+  border: 1px solid grey;
+}
 
 
 .App-logo {

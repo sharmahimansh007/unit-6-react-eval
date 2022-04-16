@@ -54,7 +54,7 @@ export const City = () => {
             <label htmlFor="">Select Country</label>
             <select name="country" style={{width:"150px"}} id="" onChange={handleChange}>
                 {country.map((elem) => {
-                    return <option  value=""> {elem.name} </option>
+                    return <option  value={country.name}> {elem.name} </option>
                 })}
             </select>
            

@@ -6,6 +6,8 @@ export const Home = () => {
 
     const [showData, setShowData] = useState([]);
 
+    
+
     useEffect(() => {
         axios.get(`http://localhost:8080/city`).then(res => {
             setShowData([...res.data])
@@ -13,7 +15,14 @@ export const Home = () => {
         })
     },[])
  
-    const [Sort, setSort] = useState([]);
+
+    const handleDlt = (id) => {
+        axios.delete(`http://localhost:8080/city${id}`).then(res => {
+            let arr = [...showData]
+            console.log(res.arr)
+        })
+    }
+    
 
     const sort = (asc) => {
         
@@ -55,10 +64,10 @@ export const Home = () => {
                 return  <tr>
                       <td> {elem.id} </td>
                       <td> {elem.name} </td>
-                      <td> {elem.population} </td>
                       <td> {elem.country} </td>
+                      <td>  {elem.population} </td>
                       <td><button>Edit</button></td>
-                      <td><button>delete</button></td>
+                      <td><button onClick={() => {handleDlt(elem.id)}} >delete</button></td>
                   </tr>
               })} 
             </tbody>
