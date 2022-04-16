@@ -1,0 +1,36 @@
+{
+  "country": [
+    {
+      "name": "india",
+      "id": 1
+    },
+    {
+      "name": "usa",
+      "id": 2
+    },
+    {
+      "name": "japan",
+      "id": 3
+    }
+  ],
+  "city": [
+    {
+      "name": "mumbai",
+      "population": "32423",
+      "country": "india",
+      "id": 2
+    },
+    {
+      "name": "paris",
+      "population": "24123123",
+      "country": "france",
+      "id": 3
+    },
+    {
+      "name": "new york",
+      "population": "2323",
+      "country": "",
+      "id": 4
+    }
+  ]
+}
