@@ -12,11 +12,32 @@ export const Home = () => {
             console.log(res.data)
         })
     },[])
+ 
+    const [Sort, setSort] = useState([]);
 
+    const sort = (asc) => {
+        
+        
+        if("asc" == asc){
+           let arr = [...showData].sort((a,b) => {return +a.population - (+b.population)})
+            setShowData([...arr])
+            // console.log(arr)
+        }else{
+            let arr = [...showData].sort((a,b) => {return +b.population - (+a.population)})
+            setShowData([...arr]);
+            // console.log(arr);
+        }
+    }
     
+
+   
+
     return (
         <>
         <h1>Home Page</h1> 
+
+        <button onClick={()=>{sort("asc")}} >Sort By Asc</button>
+        <button onClick={() => {sort("desc")}} >Sort By Desc</button> 
 
         <table id="table" style={{border:"2px solid black"}}>
             <thead>
