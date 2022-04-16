@@ -20,45 +20,15 @@
   "city": [
     {
       "name": "mumbai",
-      "population": "32423",
+      "population": "23423",
       "country": "india",
-      "id": 2
-    },
-    {
-      "name": "paris",
-      "population": "24123123",
-      "country": "france",
-      "id": 3
-    },
-    {
-      "name": "new york",
-      "population": "2323",
-      "country": "",
-      "id": 4
-    },
-    {
-      "name": "gwalior",
-      "population": "23423",
-      "country": "",
-      "id": 5
-    },
-    {
-      "name": "pune",
-      "population": "232",
-      "country": "",
-      "id": 6
+      "id": 1
     },
     {
       "name": "tokyo",
-      "population": "342",
-      "country": "",
-      "id": 7
-    },
-    {
-      "name": "tokyo",
-      "population": "23423",
+      "population": "352352",
       "country": "japan",
-      "id": 8
+      "id": 2
     }
   ]
 }

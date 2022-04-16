@@ -6,20 +6,21 @@ export const Home = () => {
 
     const [showData, setShowData] = useState([]);
 
-    
-
-    useEffect(() => {
+    const fetch= () => {
         axios.get(`http://localhost:8080/city`).then(res => {
             setShowData([...res.data])
-            console.log(res.data)
+            // console.log(res.data)
         })
+    }
+
+    useEffect(() => {
+        fetch()
     },[])
  
 
     const handleDlt = (id) => {
-        axios.delete(`http://localhost:8080/city${id}`).then(res => {
-            let arr = [...showData]
-            console.log(res.arr)
+        axios.delete(`http://localhost:8080/city/${id}`).then(res => {
+            fetch()
         })
     }
     
